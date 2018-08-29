@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bibliotecas/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand">
+                <img class="logo" src="image/if_desktop_1287529.ico" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav itensMenu">
+                    <li class="nav-item">
+                        <a class="menu" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" menu" href="#">QUEM SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu" href="#">CATEGORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" menu" href="#">PRODUTO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <button type="button" class="owl-next" id="btn-news-next">
+            <i class="fa fa-angle-right"></i>
+        </button>
+        <button type="button" id="btn-news-prev">
+            <i class="fa fa-angle-left"></i>
+        </button>
+
+        <div class="row thumbnails owl-carousel owl-theme">
+                <div class="item">
+                    <div class="item-inner">
+                        <img class="imagemTeste" src="image/imgTeste.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-inner">
+                        <img class="imagemTeste" src="image/imgTeste.jpg">
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+
+    <script src="./bibliotecas/jquery/jquery.min.js"></script>
+    <script src="./bibliotecas/js/bootstrap.min.js"></script>
+    <script src="./bibliotecas/OwlCarousel2/dist/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
