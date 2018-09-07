@@ -66,20 +66,18 @@ body header nav {
     top: 0;
     left: 0;
     z-index: 15;
+    display: none;
 }
 .maskProduct .produto-imagem{
-    width: 150px;
+    width: 120px;
+    margin-top: 14px;
 }
 
-.maskProduct .item-produto{
-    background: #fff;
-    border-right: #000 1px solid;
-}
 
 .categoria-produto{
     text-align: center;
     position: relative;
-    top: 94px;
+    top: 72px;
 }
 .produto-descricao{
     float: left;
@@ -91,12 +89,26 @@ body header nav {
     float: right;
     font-size: 26px;
     margin-top: 11px;
-    margin-bottom:0 
+    margin-bottom: 0;
+    margin-right: 10px;
 }
 
 .produto-comprar{
-    border-radius: 16px;
-    margin-top: 6px;
-    margin-bottom: 7px;
-    font-size: 9px;
+    border-radius: 16px !important;
+    margin-top: 6px !important;
+    margin-bottom: 7px !important;
+    font-size: 12px !important;
+    position: relative;
+    left: 18px;
+}
+
+.segundo-row-produtos{
+    position: relative;
+    top: 20px
+}
+
+.card-image{
+    margin: 0px;    
+    border-radius: 12px;
+    background: #fff;
 }
