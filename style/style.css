@@ -1,5 +1,17 @@
+.header-app{
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+}
+
+.carousel-efeito{
+    margin-top: 82px;
+}
+
 .logo {
     width: 40px;
+    position: relative;
+    top: -9px;
 }
 .imagemTeste{
     /* width: 100%;
@@ -43,9 +55,11 @@ body header nav {
 .titleParagraph{
     font-weight: bold;
     font-size: 70px;
+    margin-top: 48px;
 }
 .titleLine{
     border: 1px solid;
+    background: #0A707F;
 }
 .img-category{
     width: 110px;
@@ -65,7 +79,7 @@ body header nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 15;
+    z-index: 52;
     display: none;
 }
 .maskProduct .produto-imagem{
@@ -111,4 +125,19 @@ body header nav {
     margin: 0px;    
     border-radius: 12px;
     background: #fff;
+}
+.quem-somos, .contato{
+    font-size: 1.3em;
+}
+.contato{
+    text-align: center;
+}
+.contato ul{
+    padding: 1em 1em 0 1em;
+    list-style: none;
+}
+
+.contato .image-map{
+    margin: 20px 0;
+    width: 17em;
 }

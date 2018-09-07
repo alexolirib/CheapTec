@@ -1,5 +1,15 @@
 $(document).ready(function () {
 
+    $("#quemSomos, #categoria, #contato").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 600);
+    });
+    $("#home").click(function (event) {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 1000);
+    })
+
     var fecharMascara = () => $(".maskProduct").css("display", "none")
     var abrirMascara = () => $(".maskProduct").css("display", "inherit")
 
@@ -9,6 +19,14 @@ $(document).ready(function () {
             fecharMascara();
         }
     })
+
+    $(".menu").click(function () {
+        //$(this).attr("id")
+        $('#contatoDiv').animate({ scrollTop: $('#contatoDiv')[0].scrollHeight }, 500);
+        console.log(this.id)
+    })
+
+
 
     let celuar = {
         descricao: "LG G6",

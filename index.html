@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-app" id="homeDiv">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand">
                 <img class="logo" src="image/if_desktop_1287529.ico" />
@@ -34,16 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav itensMenu">
                     <li class="nav-item">
-                        <a class="menu" href="#">HOME</a>
+                        <a class="menu" id="home" href="#homeDiv" >HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class=" menu" href="#">QUEM SOMOS</a>
+                        <a class=" menu" id="quemSomos" href="#quemSomosDiv">QUEM SOMOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="menu" href="#">CATEGORIA</a>
+                        <a class="menu" id="categoria" href="#categoriaDiv">CATEGORIA</a>
                     </li>
                     <li class="nav-item">
-                        <a class=" menu" href="#">PRODUTO</a>
+                        <a class=" menu" id="contato" href="#contatoDiv">CONTATO</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@
     </header>
 
     <div class="container">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide carousel-efeito" data-ride="carousel">
 
             <ol class="carousel-indicators">
                 <li data-target="Carousel" data-slide-to="0" class="active"></li>
@@ -90,8 +90,8 @@
 
     <div id="tour" class="bg-1">
         <div class="container">
-            <h3 class="text-center">PROMOÇÕES</h3>
-            <p class="text-center">Precos Baixos só na CheapTec
+            <h3 class="text-center fontDefault">PROMOÇÕES</h3>
+            <p class="text-center fontDefault">Precos Baixos só na CheapTec
                 <br>
                 <ul class="list-group">
                     <li class="list-group-item">Julho
@@ -188,8 +188,28 @@
         </div>
     </div>
     </div>
-
-    <div class="container">
+    <div class="container" id="quemSomosDiv">
+        <h1 class="titleParagraph fontDefault">QUEM SOMOS</h1>
+        <hr class="fontDefault titleLine">
+        <div class="fontDefault quem-somos">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non semper mi. Maecenas iaculis pretium lobortis.
+                Pellentesque eu pharetra nunc. Sed mollis, nulla vel sagittis congue, odio mauris laoreet erat, ac tincidunt
+                metus odio ac leo. Donec maximus venenatis turpis, eu cursus ligula varius nec. Nullam id tristique orci.
+                Aenean nec sapien feugiat, dictum metus sit amet, tincidunt turpis. Nulla id lorem augue. Quisque gravida
+                ullamcorper sapien. Etiam id est eget orci varius vehicula. Proin a massa nisi. Sed efficitur interdum egestas.
+                Duis a mollis arcu. Curabitur vel molestie diam, quis volutpat nulla. Quisque consectetur blandit lorem,
+                sit amet accumsan ipsum accumsan eget.
+            </p>
+            <p> Nam convallis magna in tortor luctus euismod. Integer ac purus sollicitudin urna varius pulvinar ac eget felis.
+                Integer maximus dictum lectus hendrerit tempor. Quisque eget consectetur metus. Praesent dignissim mollis
+                libero ac aliquam. Sed facilisis sagittis rhoncus. Vestibulum tincidunt vulputate nunc, at molestie dui venenatis
+                eu. Maecenas porttitor massa nec eros pulvinar pulvinar. Praesent sit amet cursus velit, quis feugiat enim.
+                Aenean sed dolor neque. Duis ultricies at nisl non eleifend. Nulla ornare lacus at erat convallis bibendum.
+                Curabitur mattis velit non tortor eleifend, sit amet gravida lorem blandit.
+            </p>
+        </div>
+    </div>
+    <div class="container" id="categoriaDiv">
         <p class="titleParagraph fontDefault">CATEGORIA</p>
         <hr class="fontDefault titleLine">
         <div class="row" style="text-align: center;">
@@ -263,8 +283,8 @@
         <div class="container">
             <div class="row categoria-produto fontDefault">
                 <div class="col-md-3 item-produto" id="teste">
-                    <div class="card-image" >
-                        <img class="produto-imagem"/>
+                    <div class="card-image">
+                        <img class="produto-imagem" />
                         <div>
                             <p class="produto-descricao"></p>
                             <p class="produto-valor"></p>
@@ -345,6 +365,29 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container fontDefault" id="contatoDiv">
+        <h1 class="titleParagraph">CONTATO</h1>
+        <hr class=" titleLine">
+        <div class="contato"> 
+            <ul>
+                <li>
+                    <label>TELEFONE:</label>
+                    <label>(85) 0000-0000</label>
+                </li>
+                <li>
+                    <label>ENDEREÇO:</label>
+                    <label>Rua 1- Bairro das Flores</label>
+                </li>
+                <li>
+                    <label>EMAIL:</label>
+                    <label> loja@gmail.com</label>
+                </li>
+                <li>
+                    <img class="image-map" src="./image/mapa.png" />
+                </li>
+            </ul>
         </div>
     </div>
 
