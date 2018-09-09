@@ -12,12 +12,23 @@ $(document).ready(function () {
 
     var fecharMascara = () => $(".maskProduct").css("display", "none")
     var abrirMascara = () => $(".maskProduct").css("display", "inherit")
+    
+    var verificaDiv = 0
 
     $(".maskProduct").click(function () {
-        console.log($(this).attr('id'))
-        if ($(this).attr('class') !== "card-image") {
+        if (verificaDiv != 1) {
             fecharMascara();
         }
+        verificaDiv = 0;
+    })
+    $(".card-image").click(function () {
+        verificaDiv = 1;
+    })
+    
+
+    $(".produto-comprar").click(function (event){
+        fecharMascara();
+        verificaDiv = 0;
     })
 
     $(".menu").click(function () {
@@ -126,7 +137,6 @@ $(document).ready(function () {
 
         }
         abrirMascara();
-        console.log($(this).attr('id'))
 
     })
 })
